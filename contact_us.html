@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="City_Style.css">
+    <title>CityHealthCheck</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="container">
+        <nav class="header">
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+            <div><img src="Images/Health Logo.png" alt="Logo of CityHealthCheck"></div>
+            <div class="right-content">
+                <div class="menu">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="#">Services <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="hgv_pcv.html">HGV, PCV & D4 Medicals</a></li>
+                                    <li><a href="taxi_driver.html">Taxi Driver Medicals</a></li>
+                                    <li><a href="ml5_seafarer.html">ML5 Seafarer Medicals</a></li>
+                                    <li><a href="motor_sports.html">National Motor Sports Medical</a></li>
+                                    <li><a href="wellbeing_check.html">Health and Wellbeing Check</a></li>
+                                    <li><a href="ecg.html">ECG</a></li>
+                                    <li><a href="blood_sugar.html">Blood Sugar</a></li>
+                                    <li><a href="body_fat_analysis.html">Body Fat & Composition Analysis</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <button type="button" onclick="location.href='tel:+923025649101'">Call Now</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Contact_main-->
+    <section class="container">
+        <div class="contact-main">
+            <div class="contact-left">
+                <h2>Contact us</h2>
+                <p>We are here to help.</p>
+            </div>
+            <div class="contact-right">
+                <div class="subcontact-right">
+                    <div class="call-icon"><i class="fa fa-phone"></i></div>
+                    <div class="call-text">
+                        <h2>Call Us</h2>
+                        <p>+923025649101</p>
+                    </div>
+                </div>
+                <div class="subcontact-right">
+                    <div class="mail-icon"><i class="fa-sharp fa-solid fa-envelope social"></i></div>
+                    <div class="mail-text">
+                        <h2>Email Us</h2>
+                        <p>info@cityhealthcheck.co.uk</p>
+                    </div>
+                </div>
+                <div class="subcontact-right">
+                    <div class="map-icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="map-text">
+                        <h2>Our Address</h2>
+                        <p>Mian Muhammad Town Street-No 33 Mirpur Azad Kashmir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact_map-->
+    <div class="contact_map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13364.756038693979!2d73.73692985932362!3d33.13039867628401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391feb8788d9385d%3A0x17454c855c6ac54a!2sBan%20Khurma!5e0!3m2!1sen!2s!4v1735571175638!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!--contact-main1-->
+    <section class="container">
+        <div class="contact-main1">
+            <div class="main1-left">
+                <h2>Have any Question?</h2>
+                <p>Send us a message</p>
+                <img src="Images/city-health-check-logo.png" alt="">
+            </div>
+            <div class="message-form">
+                <form action="" id="myForm" onsubmit=" validation(event)">
+                    <div class="fullname">
+                        <div class="name">
+                            <label for="first-Name">First Name: <span class="imp">*</span></label>
+                            <input type="text" placeholder="Enter your firstname" id="first_name">
+                            <div id="first_name_error" class="error"></div>
+                        </div>
+                        <div class="name">
+                            <label for="last-Name">Last Name:<span class="imp">*</span></label>
+                            <input type="text" placeholder="Enter your lastname" id="last_name">
+                            <div id="last_name_error" class="error"></div>
+                        </div>
+                    </div>
+                    <label for="email">Email:<span class="imp">*</span></label>
+                    <input type="email" placeholder="Enter your email" id="email">
+                    <div id="email_error" class="error"></div>
+                    <label for="phone">Phone Number:<span class="imp">*</span></label>
+                    <input type="tel" id="phone" placeholder="3XXXXXXXXX" value="+92">
+                    <div id="phone_error" class="error"></div>
+                    <p id="phone_text">Enter 10 digits after +92 (e.g., 3XXXXXXXXX).</p>
+                    <label for="subject">Subject:<span class="imp">*</span></label>
+                    <input type="text" placeholder="Enter your subject" id="subject">
+                    <div id="subject_error" class="error"></div>
+                    <label for="message">Comment or Message:<span class="imp">*</span></label>
+                    <textarea id="feedback" name="feedback" placeholder="Share your message..." rows="20"
+                        cols="70"></textarea>
+                    <div id="message_error" class="error"></div>
+                    <div class="form-btn"><button type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Bottom-->
+    <section class="container">
+        <div class="bottom">
+            <div class="text">
+                <h3>Need Help?</h3>
+                <h4>We are here to help.</h4>
+            </div>
+            <div class="btn">
+                <button type="submit" onclick="location.href='#'">Contact Us Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h3>City Health Check</h3>
+                <h4>City Health Check Ltd has been a trusted provider of healthcare services since 2016. With extensive
+                    experience in conducting HGV, PCV, D4, motor sports, ML5 seafarer and taxi driver medicals, we also
+                    offer health and wellbeing assessments for life insurance clients, company employees and the general
+                    public.</h4>
+            </div>
+            <div class="footer1">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <h3>Contact Info</h3>
+                <p><b>Address:</b> City Health Check 2-3 Walsall Road Willenhall WV13 2EH</p>
+                <div class="footer_contact">
+                    <a href="tel:+923025649101"><b>Phone:</b>+923025649101</a>
+                    <a href="mailto:77waqastariq77@gmail.com"><b>Email:</b>77waqastariq77@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer1">
+                <h3>Get In Touch</h3>
+                <div class="footer_social">
+                    <a href="#"><i class="fa-brands fa-facebook social"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter social"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope social"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram social"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright 2024|CityHealthCheck</p>
+        </div>
+    </footer>
+    <script src="city_script.js"></script>
+</body>
+
+</html>
